@@ -10,13 +10,10 @@ import time
 # Azure Credentials
 # -----------------------------
 
-VISION_KEY = "3rjI2tJgEjvUS9ve9DnwGTdgu0JW5B5i0u2mE8QpRzgaCPh4l1AwJQQJ99CEACYeBjFXJ3w3AAAFACOG0FxE"
-
-VISION_ENDPOINT = "https://cv97898657.cognitiveservices.azure.com/"
-
-SPEECH_KEY = "2LNcNfQUrK6f0jj3eZ1ssHm1qALaeiXmn1foajdEdGGo9bxH06i5JQQJ99CEACYeBjFXJ3w3AAAYACOGrjDr"
-
-SPEECH_REGION = "eastus"
+VISION_KEY = st.secrets["VISION_KEY"]
+VISION_ENDPOINT = st.secrets["VISION_ENDPOINT"]
+SPEECH_KEY = st.secrets["SPEECH_KEY"]
+SPEECH_REGION = st.secrets["SPEECH_REGION"]
 
 # -----------------------------
 # Streamlit UI
